@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NEP Internship Portal - MVP</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+<h1>NEP Internship Portal (MVP)</h1>
+
+
+<div id="auth">
+<h2>Register / Login</h2>
+<select id="roleSelect">
+<option value="student">Student</option>
+<option value="faculty">Faculty</option>
+<option value="industry">Industry</option>
+<option value="admin">Admin</option>
+</select>
+<input id="name" placeholder="Name (optional)" />
+<input id="email" placeholder="Email" />
+<input id="password" type="password" placeholder="Password" />
+<button id="registerBtn">Register</button>
+<button id="loginBtn">Login</button>
+</div>
+
+
+<div id="appArea" style="display:none;">
+<div id="toolbar">
+<button id="logoutBtn">Logout</button>
+<span id="welcome"></span>
+</div>
+
+
+<section>
+<h2>Post Internship (Industry/Admin)</h2>
+<input id="ititle" placeholder="Title" />
+<input id="icompany" placeholder="Company" />
+<input id="ilocation" placeholder="Location" />
+<input id="iduration" placeholder="Duration" />
+<input id="icredits" placeholder="Credits" />
+<textarea id="idesc" placeholder="Description"></textarea>
+<button id="postInternshipBtn">Post Internship</button>
+</section>
+
+
+<section>
+<h2>Internship
